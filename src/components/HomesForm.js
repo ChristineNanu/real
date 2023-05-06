@@ -43,7 +43,7 @@ function HomesForm({ onAddHome }) {
     // // navigate to view submitted form
     // history.push("/submitted-form");
 
-    fetch("http://localhost:4300/homes", {
+    fetch("http://https://homes.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

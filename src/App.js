@@ -11,7 +11,7 @@ function App() {
   const [category, setCategory] = useState("all");
 
   useEffect(() => {
-    fetch("http://localhost:4300/homes")
+    fetch("https://homes.onrender.com/")
       .then((resp) => resp.json())
       .then((homes) => {
         setHomes(homes);

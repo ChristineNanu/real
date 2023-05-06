@@ -22,7 +22,7 @@ function HomesUpdateForm({ home, onUpdateHome }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:4300/homes/${home.id}`, {
+    fetch(`https://homes.onrender.com//${home.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
