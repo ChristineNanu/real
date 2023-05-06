@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function HomesItem({ home }) {
   //console.log(home);
@@ -48,7 +48,6 @@ function HomesItem({ home }) {
           className={`love-button ${isLoved ? "loved" : ""}`}
           onClick={handleLoveClick}
         >
-          <FontAwesomeIcon icon={faHeart} />
           <span className="love-count">{loveCount}</span>
         </button>
       </div>
