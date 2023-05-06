@@ -1,18 +1,84 @@
 body {
-    background-color: #d9f1ed;
+    background-color: #c1efe7;
+    /* background-image: url("https: //png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-run-brother-real-estate-advertising-poster-background-material-image_153908.jpg"); */
+
+}
+
+
+.homes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 5px; */
+    gap: 10px;
+    /* background-color: #b8f5c3; */
+    justify-content: center;
+    align-items: center;
+background-image: url("https: //png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-run-brother-real-estate-advertising-poster-background-material-image_153908.jpg");
+}
+
+/* .homes-item-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+} */
+
+.homes-item {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(222, 243, 194);
+    border:2px solid #9425cb;
+    border-radius: 5px ;
+    padding: 2px;
+    font-size: 12px;
 }
 
 .homes-item-images {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+
 }
 
-.homes-item-images img {
+.dominant-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 400px;
 }
+
+.small-images {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.small-images img {
+    width: 145px;
+        height: 150px;
+        margin: 2px;
+        object-fit: cover;
+}
+
+/* .homes-maincont{
+background-color: rgb(169, 228, 237);
+padding: 2px;
+border: solid black 2px;
+font-size: 12px;
+
+} */
+
+
+
+
+
+
 .love-button {
     background-color: grey;
     border: none;
@@ -111,17 +177,17 @@ button#comment:hover {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: bold;
-    color: #fff;
+    color:black;
 }
 
 .logo-icon {
-    margin-right: 1rem;
+    margin-right: 2rem;
     color: #fff;
 }
 
-.header-slogan {
+#slogan {
     margin-right: 2rem;
-    color: #fff;
+    color: black;
 }
 
 .header-background {
@@ -135,42 +201,6 @@ button#comment:hover {
     padding: 1rem 2rem;
 }
 
-/* #form-container {
-    background-color: #d8f0d8;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-}
-
-#form-container label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#form-container input,
-#form-container select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: #f5f5f5;
-}
-
-#form-container button[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#form-container button[type="submit"]:hover {
-    background-color: #3e8e41;
-} */
 
 #form-container {
     background-color: rgb(192, 237, 192);
@@ -218,3 +248,69 @@ button#comment:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
 }
+
+
+/* @media only screen and (max-width: 768px) {
+    .homes-item-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .homes-item-container {
+        width: 100%;
+    }
+} */
+/* 
+#btn1,
+#btn2 {
+background-color: #00DEB6;
+color: black;
+margin-right: 100px;
+margin-top: 20px;
+justify-content: center;
+
+} */
+  
+#btn-update{
+background-color: #a3bab6;
+    color: black;
+    margin-right: 180px;
+    margin-top: 20px;
+
+}
+
+
+#btn-delete{
+background-color: #9eb3ad;
+    color: black;
+    /* margin-right: 140px; */
+    margin-top: 20px;
+
+}
+
+
+#btn-showmore{
+background-color: #00DEB6;
+color: black;
+justify-content: center;
+margin-top: 20px;
+
+}
+
+/* .btn-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#btn1,
+#btn2 {
+    background-color: #00DEB6;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+} */
